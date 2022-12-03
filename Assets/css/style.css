@@ -1,0 +1,110 @@
+@font-face {
+    font-family:KOODAK ;
+    src: url(./../font/B-KOODAK.TTF);
+}
+body{ 
+    padding: 0px;
+    margin: 0px;
+    background: radial-gradient(circle, rgba(76,184,196,1) 0%, #1e96ff 52%, rgba(76,184,196,1) 100%); 
+}
+.header{
+    margin-top: 100px;
+    padding-top: 15px;
+    font-size: 22px;
+    color: #1A2980;
+    position:sticky;
+    top: 0%;
+    width: 100%;
+    margin-bottom: 80px ;
+}
+.header ul {
+    opacity: 100% !important;
+    text-align: right;
+    padding-right: 50px;
+    direction:rtl;
+    list-style-type: none;
+}
+.continer{
+    margin: 50px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px;
+    margin:auto; 
+    width: 1fr;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.father{
+    display: flex;
+    justify-content: center;
+}
+.continer h1{
+    font-family: KOODAK;
+    text-align: center;
+    color: rgba(29, 28, 28, 0.829);
+}
+.continer form input{
+    padding: 5px;  
+    border-radius: 10px;
+    width: 100%;
+    border: 0px none;
+    display: block;
+    margin: auto;
+    padding: 8px;
+}
+
+#reg{
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+    font:20px KOODAK;
+    margin: auto;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+#reg:hover{
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+
+.continer form label{
+    direction: rtl;
+    display: block;
+    position: relative;
+}
+
+.continer form .input{
+    border: 1px solid rgb(184, 183, 183);
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    transition-duration: 0.2s;
+}
+.continer form .input:hover{
+   box-shadow: 0px 0px 3px 0px rgb(126, 126, 126);
+}
+#psw{
+    transition-duration: 1ms;
+    display: block;
+    position:fixed;
+    direction: rtl;
+}
+#vis{
+    background-color: rgba(255, 255, 255, 0);
+    position:absolute;
+    font-size: 25px;
+    height: 2px;
+    right: 2px;
+    bottom:55px;
+}
+img{
+    margin:auto; 
+    width: 100%;
+}

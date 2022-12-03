@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فرم ثبت نام در سایت </title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link href="./Assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="./Assets/javascript/main.js"></script>
+</head>
+<body>
+    <div class="father w-25 m-auto mt-5 mb-5 ">
+    <div class="continer d-flex flex-column justify-content-center ">
+        <h1>ثبت نام در سایت</h1>
+        <img  src="./Assets/img/unnamed.png"/ class="img-fluid">
+
+        <form action="mypage.php" name='signup' method="POST" onsubmit="return(Validator())">
+
+            <label for="email">ایمیل</label>
+            <div class="input mb-3 " id='em' >
+                <input type="email" id="email" name="email" onfocusout="Ok(1)">
+            </div>
+            
+            <label for="num">شماره تلفن همراه </label>
+            <div class="input mb-3 " id='numb'>
+                <input type="tel" id="num" name="num" onfocusout="Ok(2)">
+            </div>
+            
+            <label for="pass">رمز عبور </label>
+
+            <div class="input mb-3 " id='passw'>
+                <input type="password" id="pass" name="pass" oninput="PswStrength()">
+
+                <div id='vis' ><p type="button" onclick="Toggle()" id="tvalue">&#128584;</p></div>
+
+                <div class="progress">
+                    <div id='pswprog'class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%"></div>
+                </div>
+
+                <div id="psw"></div>
+            </div>
+            <br>
+            <input type="submit" id='reg' value="ثبت نام" name="reg" >
+
+        </form>   
+        
+      <p id="res"></p>
+      
+    </div>
+</div>
+</body>
+</html>
